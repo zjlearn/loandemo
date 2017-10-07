@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Page Description">
-    <meta name="author" content="zhangjun1">
-    <title>Page Title</title>
+    <meta name="author" content="zjlearn">
+    <title>我要投资</title>
 
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,17 +21,138 @@
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row">
-       <ul class = "span 4">
-            <P>hjr</P>
-       </ul>
-        <ul class = "span 4">
-            <P>hjr</P>
-        </ul>
-        <ul class = "span 4">
-            <P>hjr</P>
-        </ul>
+<div class="main-body w">
+    <!-- <div class="subnav clearfix">
+        <div class="btntouzi blue zixun fr"><a href="/layout/bzbList.html?nav=1">百赚宝</a></div>
+        <a href="/layout/product.html?nav=1">理财产品</a><span>散标债权</span>
+    </div> -->
+    <div class="list-type clearfix bor">
+
+        <h2 class="clearfix">项目筛选</h2>
+
+        <div class="shaixuan fl">
+
+            <div class="typeInfo clearfix" id="doTime">
+                <span>项目类型：</span>
+                <a href="javascript:void(0);" onclick="doRate(this)" value="0" name="rate" class="click">不限</a>
+                <a href="javascript:void(0);" onclick="doRate(this)" value="1" name="rate">房产抵押</a>
+                <a href="javascript:void(0);" onclick="doRate(this)" value="2" name="rate">车辆抵押</a>
+                <a href="javascript:void(0);" onclick="doRate(this)" value="3" name="rate">企业贷</a>
+            </div>
+            <div class="typeInfo" id="doStatus">
+                <span>项目状态：</span>
+                <a href="javascript:void(0);" onclick="doStatus(this)" value="0" name="status" class="click">不限</a>
+                <a href="javascript:void(0);" onclick="doStatus(this)" value="3" name="status">投资中</a>
+                <a href="javascript:void(0);" onclick="doStatus(this)" value="5" name="status">已满标</a>
+                <a href="javascript:void(0);" onclick="doStatus(this)" value="8" name="status">还款中</a>
+            </div>
+            <div class="typeInfo clearfix">
+                <span>投资期限：</span>
+                <a href="javascript:void(0);" onclick="doTime(this)" value="0" name="time" class="click">不限</a>
+                <a href="javascript:void(0);" onclick="doTime(this)" value="1" name="time"> 1个月以内</a>
+                <a href="javascript:void(0);" onclick="doTime(this)" value="2" name="time">1-3个月</a>
+                <a href="javascript:void(0);" onclick="doTime(this)" value="3" name="time">4-6个月</a>
+                <a href="javascript:void(0);" onclick="doTime(this)" value="4" name="time">7-9个月</a>
+                <a href="javascript:void(0);" onclick="doTime(this)" value="5" name="time">10-12个月</a>
+                <a href="javascript:void(0);" onclick="doTime(this)" value="6" name="time">12个月以上</a>
+            </div>
+        </div>
+        <div class="bidnumb fl">
+            <p>累计交易金额:<span id="sumInvers"><font>320,442,600</font><em>.00</em></span>元</p>
+            <p>为投资人获益:<span id="sumAccount"><font>6,036,539</font><em>.00</em></span>元</p>
+            <p>累计投资人次:<span id="sumUser">19708</span>次</p>
+        </div>
+
+    </div>
+    <div class="bid-list bgfff">
+        <div class="column6">
+            <ul class="financial-table" id="projectItem">
+
+
+                <input type="hidden" id="total" value="1560">
+
+                <!-- 遍历 -->
+
+                <li class="clearfix">
+                    <div class="list1 fore1">
+                        <div class="item">
+
+                            <a target="_blank" href="/pro/sanb/2600.html" class="title">
+
+                                房押贷
+
+
+                            </a>
+
+
+                            <!-- start 显示年终奖 “奖” 图标 --><!-- end 显示年终奖 “奖” 图标 --></div>
+                        <font><a target="_blank" title="房押贷BR17100027" href="/pro/sanb/2600.html"
+                                 id="title0">BR17100027</a></font>
+                        <script type="text/javascript">jiequ("title0", "房押贷BR17100027")</script>
+                    </div>
+                    <div class="list1 fore2">
+                        <div class="item">
+                            <em id="projectRate0">4.8</em><span>%</span>
+                        </div>
+                        <font>历史年化收益率</font>
+                    </div>
+                    <div class="list1 fore3">
+                        <div class="item">1<span>个月</span></div>
+                        <font>融资期限</font>
+                    </div>
+                    <div class="list1 fore4">
+                        <div class="item">¥<span id="money0"><script
+                                type="text/javascript">readMoney5('money0', '60300')</script>60,300.00</span></div>
+                        <font>剩余可投</font>
+                    </div>
+                    <div class="list1 fore5">
+
+
+                        <div class="btntouzi blue">
+                            <a href="/pro/sanb/2600.html" target="_blank">立即投资</a>
+                        </div>
+
+
+                    </div>
+                    <div class="list1 fore6">
+                        <div class="item" id="jindu0">
+                            <div class="jindu"><span>62%</span>投资进度</div>
+                            <div class="container">
+                                <div class="progress"><span class="green" style="width:62%"></span></div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">readJinDu('jindu0', '96700', '157000', '3')</script>
+                    </div>
+                </li>
+
+                <script type="text/javascript">
+                    $(".fore1").hover(
+                        function () {
+                            $(this).addClass("fontcolor");
+                        },
+                        function () {
+                            $(this).removeClass("fontcolor");
+                        });
+                </script>
+
+            </ul>
+            <div class="clear"></div>
+            <div class="pagination" id="Pagination" style="width:100%" align="center"><span class="gong">共156页</span><a
+                    href="javascript:void(0);" onclick="javascript:void(0)" class="first1"></a><a
+                    href="javascript:void(0);" onclick="javascript:void(0)" class="current">1</a><a
+                    href="javascript:void(0);" onclick="getProjectList(1)" class="">2</a><a href="javascript:void(0);"
+                                                                                            onclick="getProjectList(2)"
+                                                                                            class="">3</a><a
+                    href="javascript:void(0);" onclick="getProjectList(3)" class="">4</a><a href="javascript:void(0);">...</a><a
+                    href="javascript:void(0);" onclick="getProjectList(155)">156</a><a href="javascript:void(0);"
+                                                                                       onclick="getProjectList(1)"
+                                                                                       class="last"></a><input size="2"
+                                                                                                               class="gopageIndex"
+                                                                                                               value="1"
+                                                                                                               type="text"><a
+                    class="queding" href="javascript:void(0);"
+                    onclick="toPage($(this).prev().val(),156,&quot;getProjectList&quot;)">GO</a></div>
+        </div>
     </div>
 </div>
 
@@ -44,5 +160,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

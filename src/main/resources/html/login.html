@@ -1,55 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:list-style-type="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="zj">
+    <title>融贷</title>
 
-    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.css" rel="stylesheet">
 
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" initial-scale=1>
-    <title>医贷汇</title>
-
-    <style id="style-1-cropbar-clipper">
-        .en-markup-crop-options {
-            top: 18px !important;
-            left: 50% !important;
-            margin-left: -100px !important;
-            width: 200px !important;
-            border: 2px rgba(255, 255, 255, .38) solid !important;
-            border-radius: 4px !important;
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 50px;
         }
 
-        .en-markup-crop-options div div:first-of-type {
-            margin-left: 0px !important;
+        .starter-template {
+            padding: 40px 15px;
+            text-align: center;
         }
     </style>
-</head>
-<body>
 
-<div class="container  ">
-    <div class="en-markup-crop-options">
-        <form class="form-signin">
-            <h2 class="form-signin-heading">登录</h2>
-            <label for="inputEmail" class="sr-only">用户名</label>
-            <input type="tel" id="inputEmail" class="form-control" placeholder="手机号/邮箱" required autofocus>
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        </form>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!--头部的导航栏-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container .col-md-6  .col-md-offset-6 ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar">
+                </span>
+                <span class="icon-bar">
+
+                </span>
+                <span class="icon-bar">
+
+                </span>
+            </button>
+            <a class="navbar-brand" href="#">融贷</a>
+        </div>
+        <div class="row">
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">主页</a></li>
+                    <li><a href="login.html">登录</a></li>
+                    <li><a href="loan.html">注册</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
     </div>
-</div> <!-- /container -->
+</div>
+<!--主要功能导航栏-->
+<nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+            <img alt="Brand" src="...">
+        </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse nav-pills navbar-collapse navbar-ex1-collapse navbar-right ">
+        <ul class="nav nav-pills ">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#" role="navigation">债券投资</a></li>
+            <li><a href="#" role="navigation">借款申请</a></li>
+            <li><a href="#" role="navigation">关于我们</a></li>
+            <li><a href="#" role="navigation">我的账户</a></li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+
+<!--登录窗口显示模块-->
+<div class="wrap">
+    <div class="row">
+        <div class="col-lg-3 col-md-offset-3">
+            <h1 id="login-title" class="mt20">欢迎登录融贷</h1>
+            <form id="loginForm" class="form-horizontal">
+
+                <input type="tel tabindex="1" class="form-control" name="username" id="name" placeholder="手机号" autofocus="">
+                <span style="color: red;" id="s_email" class="formtips">*请輸入您的密码手机号</span>
+
+                <input tabindex="2" type="password" class="form-control ico-pass" name="password" id="password" placeholder="请输入密码">
+                <span style="color: red;" id="s_password" class="formtips"></span>
+                <br>
+                <div class="input-group">
+                    <input type="text" tabindex="3" class="form-control ico-check" name="checkcode" id="checkcode" placeholder="验证码">
+                    <div class="input-group-addon">
+                        <img style="height:30px;" id="captchaImg" onclick="refreshCaptcha()" title="看不清楚？点击刷新" src="/captcha.do?cid=USER_LOGIN" class="login-captcha">&nbsp;&nbsp;
+                        <a href="javascript:void()" onclick="refreshCaptcha()" style="color: blue;">看不清?</a>
+                    </div>
+                </div>
+                <br>
+                <div style="color: red;" id="s_code" class="formtips"></div>
+
+                <button id="btn_login" type="button" class="btn btn-success .btn-lg">登&nbsp;录</button>
+                <br>
+                <div class="row">
+                    <span class="col-lg-6">没有帐号?<a id="now-regest" href="register.html">立即注册</a></span>
+                    <span class="col-lg-6"><a id="forgetpass" href="findPwd.html">忘记密码?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--页脚-->
+<footer class="panel-footer center-on-small-only stylish-color-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <ul class="col-lg-4">
+                    <li><a href="/pro/sanb.html" target="_blank">我要投资</a></li>
+                    <li><a href="/layout/newGuidelines.html?nav=0" target="_blank">新手指引</a></li>
+                    <li><a href="/layout/secrityAssuce.html?nav=4" target="_blank">安全保障</a></li>
+                    <li><a href="/layout/declaration.html" target="_blank">法律声明</a></li>
+
+                </ul>
+                <ul class="col-lg-4">
+                    <li><a href="/layout/adbutWo.html?nav=5" target="_blank">公司简介</a></li>
+                    <li><a href="/layout/adbutZhaopin.html?nav=5" target="_blank">招贤纳士</a></li>
+                    <li><a href="/layout/sitemap.html" target="_blank">网站地图</a></li>
+                    <li><a href="/layout/adbutUs.html?nav=5" target="_blank">联系我们</a></li>
+
+                </ul>
+                <ul class="col-lg-4">
+
+                    <li><a href="/layout/help.html?pad=1" target="_blank">名词解释</a></li>
+                    <li><a href="/layout/help.html?pad=3" target="_blank">认证安全</a></li>
+                    <li><a href="/layout/help.html?pad=4" target="_blank">投资管理</a></li>
+                    <li><a href="/layout/help.html?pad=5" target="_blank">充值提现</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <p>客服电话<span>(工作时间: 9:00～18:00)</span></p>
+                <p>400-890-3368</p>
+                <div>
+                    关注我们：
+                    <div>
+                        <div style="display: none;" class="pophover-content popover fade bottom in pa">
+                            <div class="arrow"></div>
+                            <div class="popover-content tc">
+                                <p style="white-space: nowrap">扫码关注百仁贷微信</p>
+
+                                <div style="width: 121px; height: 131px; margin-left: 15px;">
+                                    <img src="/images/wx.jpg" style="width: 121px; height: 131px;" alt="百仁贷"
+                                         title="百仁贷">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qq pr pophover brd-s">
+                        <div style="display: none;" class="pophover-content popover fade bottom in pa">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <p style="text-align: center;">
+                                    百仁贷客户群 <br>
+                                    <a target="_blank"
+                                       href="http://shang.qq.com/wpa/qunwpa?idkey=8ae9fba4a858ebfff512f514cda482e6c784ac20c9521c60870f0c64a3578f78">
+                                        QQ:26673004
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wb pr pophover brd-s">
+                        <div style="display: none;" class="pophover-content popover fade bottom in pa">
+                            <div class="arrow"></div>
+                            <div class="popover-content">
+                                <p style="text-align: center;">
+                                    点击关注<font class="color">百仁贷</font>微博
+                                    <a href="http://weibo.com/5582851488/profile?topnav=1&amp;wvr=6" target="_blank">@Bairendai</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teamTime fr">
+                <p>工作时间：<span style="font-size:14px;">9:00 - 18:00</span></p>
+                <div class="btntouzi blue zixun" id="fottqq"><a href="javascript:fottQQ();">在线咨询</a></div>
+                <p>客服邮箱：<span>kf@bairendai.com</span></p>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
