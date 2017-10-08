@@ -20,7 +20,220 @@
     <![endif]-->
 </head>
 <body>
-<h1>Body</h1>
+
+
+<!--个人中心的信息展示模块-->
+<div class="wrap">
+    <div class="container">
+        <!--侧边栏模块-->
+        <div id="page-sidebar-menu" class="col-lg-2">
+            <div class="menu">
+                <h3><a id="hometitle" href="/ucenter/home.html">会员中心</a></h3>
+                <ul class=".list-unstyled">
+                    <li class=".list-unstyled">
+                        <h3 class=".list-unstyled">我的资金</h3>
+                        <ul class=".list-unstyled">
+                            <li class=".list-unstyled "><a class="l-m-icon" href="/ucenter/fundrecord.html">资金概况</a>
+                            </li>
+                            <li class=".list-unstyled"><a class="l-m-icon" href="/ucenter/finance/recharge.html">充值</a>
+                            </li>
+                            <li class=".list-unstyled"><a class="l-m-icon" href="/ucenter/finance/withdraw.html">提现</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class=".list-unstyled">
+                    <li class="li01">
+                        <h3 class="myaccount">我的账户</h3>
+                        <ul class="li_01">
+                            <li class="submeun-4"><a class="l-m-icon" href="/ucenter/safety.html">安全中心</a></li>
+                            <li class="submeun-5"><a class="l-m-icon" href="/ucenter/friend.html">邀请好友</a></li>
+                            <!--
+                            <li class="submeun-6"><a class="l-m-icon" href="/ucenter/ticket.html">我的红包</a></li>
+                            -->
+                            <li class="submeun-7"><a class="l-m-icon" href="/ucenter/notice.html">系统消息</a></li>
+                            <li class="submeun-10"><a class="l-m-icon" href="/ucenter/info.html">借款资料</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <ul class=".list-unstyled">
+                    <li class="li01">
+                        <h3 class="myinvest">我的投资</h3>
+                        <ul class="li_01">
+                            <li class="submeun-9"><a class="l-m-icon" href="/ucenter/invest/tendering.html">投资列表</a>
+                            </li>
+                            <li class="submeun-8"><a class="l-m-icon" href="/ucenter/invest/statistics.html">投资统计</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class=".list-unstyled">
+                    <li class="li01">
+                        <h3 class="myloan">我的借款</h3>
+                        <ul class="li_01">
+                            <li class="submeun-12"><a class="l-m-icon" href="/ucenter/myloan/all.html">借款列表</a></li>
+                            <li class="submeun-13"><a class="l-m-icon" href="/ucenter/myloan/repay-info.html">还款列表</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--主要的展示模块-->
+        <div id="page-content-wrapper" class="col-lg-8">
+            <!--放进container 使得间距更大-->
+            <div class="container">
+                <div class="row">
+                    <img class="img-circle col-lg-2" id="headImg" src="/image/user.jpg" width="100" height="100"
+                         title="点击更换头像">
+                    <div class="row">
+                        <h3 class="userName">ydh_13016413998</h3>
+                        <div class="row">
+                            <a href="/ucenter/ipsLoginRedirect.html" target="_blank" title="登录资金存管账户"><span
+                                    class="ico-realname"></span></a>
+                            <a href="javascript:void(0);" title="绑定手机"><span class="ico-phone"></span></a>
+
+                            <a href="/ucenter/safety/email.html" title="绑定邮箱"><span class="ico-email-null"></span></a>
+                            <span style="position: relative;top: 16px;margin-left: 15px;">会员积分：30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="HOME">
+
+                <div class="col-lg-8">
+                    <div class="row">
+                        <span class="money">0</span>
+                        <p>总资产（元）</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <span class="money">0</span>
+                            <p>可用金额（元）</p>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <span class="money">0</span>
+                            <p>冻结金额（元）</p>
+                        </div>
+                        <div class="col-lg-2">
+                            <span class="money">0</span>
+                            <p>待收金额（元）</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="col-lg-4" href="/ucenter/finance/recharge.html" target="_self"
+                           style="margin-right:23px;">账户充值</a>
+                        <a class="col-lg-4" href="/ucenter/finance/withdraw.html" target="_self">提&nbsp;&nbsp;现</a>
+
+                    </div>
+                </div>
+
+                <!--资金比例的图表对应的信息-->
+                <div class="chart col-lg-4" id="pieChart"
+                     style="-webkit-tap-highlight-color: transparent; user-select: none; background-color: transparent;"
+                     _echarts_instance_="1507427384112">
+                    <div style="position: relative; overflow: hidden; width: 261px; height: 298px; cursor: default;">
+                        <canvas width="261" height="298" data-zr-dom-id="zr_0"
+                                style="position: absolute; left: 0px; top: 0px; width: 261px; height: 298px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 我的投资 -->
+            <div role="tabpanel" class="tab-pane active" id="investment">
+                <div class="navli" style="clear:both;">
+                    <a href="#investment" style="color: black;">理财统计</a>
+                </div>
+                <table class="table table-bordered table-tongji">
+                    <tbody>
+                    <tr class="table-title">
+                        <td colspan="3">回报统计</td>
+                    </tr>
+                    <tr class="table-title">
+                        <td>投资利息</td>
+                        <td>推荐奖励</td>
+                        <td>其他奖励</td>
+                    </tr>
+                    <tr>
+                        <td>0.00元</td>
+                        <td>0.00元</td>
+                        <td>0.00元</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-bordered table-tongji">
+                    <tbody>
+                    <tr class="table-title">
+                        <td colspan="5">个人理财统计</td>
+                    </tr>
+                    <tr class="table-title">
+                        <td>总借出金额</td>
+                        <td>总借出笔数</td>
+                        <td>已回收本息</td>
+                        <td>待回收本息</td>
+                        <td>待回收笔数</td>
+                    </tr>
+                    <tr>
+                        <td>0.00元</td>
+                        <td>0</td>
+                        <td>0.00元</td>
+                        <td>0.00元</td>
+                        <td>0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- 头像上传模态框 -->
+        <div class="modal fade" id="headerModal" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document" style="background-color:#fff;">
+                <div class="modal-header">
+                    <div class="modal-content">
+                        <div class="js-fileapi-wrapper upload-btn" id="choose">
+                            <input name="files" type="file">
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div id="images">
+                            <p style="margin-top: 40px;">
+                            </p>
+                            <table class="table table-striped">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div id="img2"></div>
+                                    </td>
+                                    <td>预览:
+                                        <div id="img3"></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="btn" class="btn btn-default">上传</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
