@@ -32,7 +32,7 @@ public enum HttpStatus {
     USE_PROXY(305, "Use Proxy"),
     TEMPORARY_REDIRECT(307, "Temporary Redirect"),
     PERMANENT_REDIRECT(308, "Permanent Redirect"),
-    BAD_REQUEST(400, "Bad Request"),
+    BAD_REQUEST(400, "Bad RequestDTO"),
     UNAUTHORIZED(401, "Unauthorized"),
     PAYMENT_REQUIRED(402, "Payment Required"),
     FORBIDDEN(403, "Forbidden"),
@@ -40,7 +40,7 @@ public enum HttpStatus {
     METHOD_NOT_ALLOWED(405, "Method Not Allowed"),
     NOT_ACCEPTABLE(406, "Not Acceptable"),
     PROXY_AUTHENTICATION_REQUIRED(407, "Proxy Authentication Required"),
-    REQUEST_TIMEOUT(408, "Request Timeout"),
+    REQUEST_TIMEOUT(408, "RequestDTO Timeout"),
     CONFLICT(409, "Conflict"),
     GONE(410, "Gone"),
     LENGTH_REQUIRED(411, "Length Required"),
@@ -48,11 +48,11 @@ public enum HttpStatus {
     PAYLOAD_TOO_LARGE(413, "Payload Too Large"),
     /** @deprecated */
     @Deprecated
-    REQUEST_ENTITY_TOO_LARGE(413, "Request Entity Too Large"),
+    REQUEST_ENTITY_TOO_LARGE(413, "RequestDTO Entity Too Large"),
     URI_TOO_LONG(414, "URI Too Long"),
     /** @deprecated */
     @Deprecated
-    REQUEST_URI_TOO_LONG(414, "Request-URI Too Long"),
+    REQUEST_URI_TOO_LONG(414, "RequestDTO-URI Too Long"),
     UNSUPPORTED_MEDIA_TYPE(415, "Unsupported Media Type"),
     REQUESTED_RANGE_NOT_SATISFIABLE(416, "Requested range not satisfiable"),
     EXPECTATION_FAILED(417, "Expectation Failed"),
@@ -72,7 +72,7 @@ public enum HttpStatus {
     UPGRADE_REQUIRED(426, "Upgrade Required"),
     PRECONDITION_REQUIRED(428, "Precondition Required"),
     TOO_MANY_REQUESTS(429, "Too Many Requests"),
-    REQUEST_HEADER_FIELDS_TOO_LARGE(431, "Request Header Fields Too Large"),
+    REQUEST_HEADER_FIELDS_TOO_LARGE(431, "RequestDTO Header Fields Too Large"),
     UNAVAILABLE_FOR_LEGAL_REASONS(451, "Unavailable For Legal Reasons"),
     INTERNAL_SERVER_ERROR(500, "Internal Server Error"),
     NOT_IMPLEMENTED(501, "Not Implemented"),
