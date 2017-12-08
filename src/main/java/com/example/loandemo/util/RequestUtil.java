@@ -1,7 +1,6 @@
 package com.example.loandemo.util;
 
 import com.alibaba.fastjson.JSONObject;
-import com.ips.security.utility.IpsCrypto;
 import org.apache.http.Consts;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;

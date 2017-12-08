@@ -1,6 +1,5 @@
 package com.example.loandemo.util;
 
-import com.ips.security.utility.IpsCrypto;
 
 /**
  * create by zhangjun1 on 2017/12/3
