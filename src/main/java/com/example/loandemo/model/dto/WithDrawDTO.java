@@ -3,11 +3,11 @@ package com.example.loandemo.model.dto;
 
 import com.example.loandemo.util.Validate;
 
-public class WithDrawRequest implements RequestDTO {
+public class WithDrawDTO implements RequestDTO {
 
-	public WithDrawRequest(String merFee, String merBillNo, String merFeeType,
-			String webUrl, String merDate, String ipsFeeType, String userType,
-			String trdAmt, String ipsAcctNo, String s2sUrl) {
+	public WithDrawDTO(String merFee, String merBillNo, String merFeeType,
+                       String webUrl, String merDate, String ipsFeeType, String userType,
+                       String trdAmt, String ipsAcctNo, String s2sUrl) {
 		super();
 		this.merFee = merFee;
 		this.merBillNo = merBillNo;
@@ -20,7 +20,7 @@ public class WithDrawRequest implements RequestDTO {
 		this.ipsAcctNo = ipsAcctNo;
 		s2SUrl = s2sUrl;
 	}
-	public WithDrawRequest(){}
+	public WithDrawDTO(){}
 	
 	public String merFee;
 	public String merBillNo;

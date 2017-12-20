@@ -3,11 +3,11 @@ package com.example.loandemo.model.dto;
 
 import com.example.loandemo.util.Validate;
 
-public class UnFreezeRequest implements RequestDTO {
+public class UnFreezeDTO implements RequestDTO {
 
-	public UnFreezeRequest(String merFee, String merBillNo, String projectNo,
-			String bizType, String webUrl, String merDate, String trdAmt,
-			String ipsAcctNo, String freezeId, String s2sUrl) {
+	public UnFreezeDTO(String merFee, String merBillNo, String projectNo,
+                       String bizType, String webUrl, String merDate, String trdAmt,
+                       String ipsAcctNo, String freezeId, String s2sUrl) {
 		super();
 		this.merFee = merFee;
 		this.merBillNo = merBillNo;
@@ -20,7 +20,7 @@ public class UnFreezeRequest implements RequestDTO {
 		this.freezeId = freezeId;
 		s2SUrl = s2sUrl;
 	}
-	public UnFreezeRequest(){}
+	public UnFreezeDTO(){}
 	public String merFee;
 	public String merBillNo;
 	public String projectNo;

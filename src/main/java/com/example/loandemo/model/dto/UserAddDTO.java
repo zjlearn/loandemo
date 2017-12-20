@@ -6,11 +6,11 @@ import com.example.loandemo.util.Validate;
 /*
  * 这个是用户添加的请求报文
  */
-public class UserAddRequest implements RequestDTO {
-	public UserAddRequest(String userName, String merBillNo, String realName,
-			String bizType, String mobileNo, String enterName, String merDate,
-			String userType, String webUrl, String orgCode, String isAssureCom,
-			String s2sUrl, String identNo) {
+public class UserAddDTO implements RequestDTO {
+	public UserAddDTO(String userName, String merBillNo, String realName,
+                      String bizType, String mobileNo, String enterName, String merDate,
+                      String userType, String webUrl, String orgCode, String isAssureCom,
+                      String s2sUrl, String identNo) {
 		super();
 		this.userName = userName;
 		this.merBillNo = merBillNo;
@@ -26,7 +26,7 @@ public class UserAddRequest implements RequestDTO {
 		s2SUrl = s2sUrl;
 		this.identNo = identNo;
 	}
-	public UserAddRequest(){
+	public UserAddDTO(){
 		
 	}
 	public String userName;

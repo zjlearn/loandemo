@@ -3,15 +3,15 @@ package com.example.loandemo.model.dto;
 
 import com.example.loandemo.util.Validate;
 
-public class CommonQueryRequest implements RequestDTO {
-	public CommonQueryRequest(String merBillNo, String queryType,
-			String ipsAcctNo) {
+public class CommonQueryDTO implements RequestDTO {
+	public CommonQueryDTO(String merBillNo, String queryType,
+                          String ipsAcctNo) {
 		super();
 		this.merBillNo = merBillNo;
 		this.queryType = queryType;
 		this.ipsAcctNo = ipsAcctNo;
 	}
-	public CommonQueryRequest(){}
+	public CommonQueryDTO(){}
 	public String merBillNo;
 	public String queryType;
 	public String ipsAcctNo;

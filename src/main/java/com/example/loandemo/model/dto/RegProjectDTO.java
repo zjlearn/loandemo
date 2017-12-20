@@ -3,13 +3,13 @@ package com.example.loandemo.model.dto;
 
 import com.example.loandemo.util.Validate;
 
-public class RegProjectRequest implements RequestDTO {
-	public RegProjectRequest(String isExcess, String merBillNo,
-			String projectType, String projectUse, String projectNo,
-			String projectName, String finaIpsAcctNo, String finaName,
-			String rateType, String merDate, String rateMaxVal,
-			String rateMinVal, String cycVal, String finaAccType,
-			String finaCertNo, String rateVal, String projectAmt, String s2sUrl) {
+public class RegProjectDTO implements RequestDTO {
+	public RegProjectDTO(String isExcess, String merBillNo,
+                         String projectType, String projectUse, String projectNo,
+                         String projectName, String finaIpsAcctNo, String finaName,
+                         String rateType, String merDate, String rateMaxVal,
+                         String rateMinVal, String cycVal, String finaAccType,
+                         String finaCertNo, String rateVal, String projectAmt, String s2sUrl) {
 		super();
 		this.isExcess = isExcess;
 		this.merBillNo = merBillNo;
@@ -30,7 +30,7 @@ public class RegProjectRequest implements RequestDTO {
 		this.projectAmt = projectAmt;
 		s2SUrl = s2sUrl;
 	}
-	public RegProjectRequest(){ //Ĭ�Ϲ��캯��
+	public RegProjectDTO(){ //Ĭ�Ϲ��캯��
 		
 	}
 	public String isExcess;

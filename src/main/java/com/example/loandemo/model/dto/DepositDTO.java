@@ -2,11 +2,11 @@ package com.example.loandemo.model.dto;
 import com.example.loandemo.util.Validate;
 
 
-public class DepositRequest implements RequestDTO {
-	public DepositRequest(String merFee, String merBillNo, String taker,
-			String merFeeType, String depositType, String webUrl,
-			String merDate, String ipsFeeType, String userType, String trdAmt,
-			String ipsAcctNo, String bankCode, String channelType, String s2sUrl) {
+public class DepositDTO implements RequestDTO {
+	public DepositDTO(String merFee, String merBillNo, String taker,
+                      String merFeeType, String depositType, String webUrl,
+                      String merDate, String ipsFeeType, String userType, String trdAmt,
+                      String ipsAcctNo, String bankCode, String channelType, String s2sUrl) {
 		super();
 		this.merFee = merFee;
 		this.merBillNo = merBillNo;
@@ -23,7 +23,7 @@ public class DepositRequest implements RequestDTO {
 		this.channelType = channelType;
 		s2SUrl = s2sUrl;
 	}
-	public DepositRequest(){  //Ĭ�Ϲ��캯��
+	public DepositDTO(){  //Ĭ�Ϲ��캯��
 		
 	}
 	public String merFee;

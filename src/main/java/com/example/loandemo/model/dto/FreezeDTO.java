@@ -3,12 +3,12 @@ package com.example.loandemo.model.dto;
 
 import com.example.loandemo.util.Validate;
 
-public class FreezeRequest implements RequestDTO {
-	public FreezeRequest(String merFee, String merBillNo, String projectNo,
-			String bizType, String otherIpsAcctNo, String ipsAcctNo,
-			String merDate, String contractNo, String freezeMerType,
-			String webUrl, String trdAmt, String authNo, String regType,
-			String s2sUrl) {
+public class FreezeDTO implements RequestDTO {
+	public FreezeDTO(String merFee, String merBillNo, String projectNo,
+                     String bizType, String otherIpsAcctNo, String ipsAcctNo,
+                     String merDate, String contractNo, String freezeMerType,
+                     String webUrl, String trdAmt, String authNo, String regType,
+                     String s2sUrl) {
 		super();
 		this.merFee = merFee;
 		this.merBillNo = merBillNo;
@@ -25,7 +25,7 @@ public class FreezeRequest implements RequestDTO {
 		this.regType = regType;
 		s2SUrl = s2sUrl;
 	}
-	public FreezeRequest(){} //
+	public FreezeDTO(){} //
 	public String merFee;
 	public String merBillNo;
 	public String projectNo;

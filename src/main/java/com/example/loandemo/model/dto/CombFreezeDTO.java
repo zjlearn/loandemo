@@ -4,10 +4,10 @@ package com.example.loandemo.model.dto;
 import com.example.loandemo.util.Validate;
 
 
-public class CombFreezeRequest implements RequestDTO {
-	public CombFreezeRequest(String projectNo, RedPacket redPacket, Bid bid,
-			String webUrl, String merDate, String contractNo, String authNo,
-			String regType, String s2sUrl) {
+public class CombFreezeDTO implements RequestDTO {
+	public CombFreezeDTO(String projectNo, RedPacket redPacket, Bid bid,
+						 String webUrl, String merDate, String contractNo, String authNo,
+						 String regType, String s2sUrl) {
 		super();
 		this.projectNo = projectNo;
 		this.redPacket = redPacket;
@@ -19,7 +19,7 @@ public class CombFreezeRequest implements RequestDTO {
 		this.regType = regType;
 		s2SUrl = s2sUrl;
 	}
-	public CombFreezeRequest(){}
+	public CombFreezeDTO(){}
 	public String projectNo;
 	public RedPacket redPacket;
 	public Bid bid;

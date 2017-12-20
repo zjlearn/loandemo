@@ -5,10 +5,10 @@ import com.example.loandemo.util.Validate;
 
 import java.util.List;
 
-public class TransferRequest implements RequestDTO {  //all checked
-	public TransferRequest(String isAutoRepayment, String transferType,
-						   String projectNo, String transferMode, String batchNo,
-						   String merDate, List<TransferAccDetail> transferAccDetail, String s2sUrl) {
+public class TransferDTO implements RequestDTO {  //all checked
+	public TransferDTO(String isAutoRepayment, String transferType,
+					   String projectNo, String transferMode, String batchNo,
+					   String merDate, List<TransferAccDetail> transferAccDetail, String s2sUrl) {
 		super();
 		this.isAutoRepayment = isAutoRepayment;
 		this.transferType = transferType;
@@ -19,7 +19,7 @@ public class TransferRequest implements RequestDTO {  //all checked
 		this.transferAccDetail = transferAccDetail;
 		s2SUrl = s2sUrl;
 	}
-	public TransferRequest(){}
+	public TransferDTO(){}
 	public String isAutoRepayment;
 	public String transferType;
 	public String projectNo;

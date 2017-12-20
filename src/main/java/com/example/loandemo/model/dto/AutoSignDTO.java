@@ -3,11 +3,11 @@ package com.example.loandemo.model.dto;
 
 import com.example.loandemo.util.Validate;
 
-public class AutoSignRequest implements RequestDTO {
-	public AutoSignRequest(String webUrl, String merBillNo, String rateMin,
-			String rateMax, String bidMin, String bidMax, String validity,
-			String merDate, String userType, String cycMaxVal,
-			String ipsAcctNo, String signedType, String cycMinVal, String s2sUrl) {
+public class AutoSignDTO implements RequestDTO {
+	public AutoSignDTO(String webUrl, String merBillNo, String rateMin,
+					   String rateMax, String bidMin, String bidMax, String validity,
+					   String merDate, String userType, String cycMaxVal,
+					   String ipsAcctNo, String signedType, String cycMinVal, String s2sUrl) {
 		super();
 		this.webUrl = webUrl;
 		this.merBillNo = merBillNo;
@@ -24,7 +24,7 @@ public class AutoSignRequest implements RequestDTO {
 		this.cycMinVal = cycMinVal;
 		s2SUrl = s2sUrl;
 	}
-	public AutoSignRequest(){}
+	public AutoSignDTO(){}
 	public String webUrl;
 	public String merBillNo;
 	public String rateMin;

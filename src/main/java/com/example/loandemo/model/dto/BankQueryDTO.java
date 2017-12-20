@@ -1,8 +1,8 @@
 package com.example.loandemo.model.dto;
 
-public class BankQueryRequest implements RequestDTO {
+public class BankQueryDTO implements RequestDTO {
 
-	public BankQueryRequest() {
+	public BankQueryDTO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
