@@ -18,8 +18,15 @@ public class UserController {
     }
 
 
-    @RequestMapping("register")
+    @RequestMapping("/register")
     public Result register(){
         return ResultGenerator.genSuccessResult();
     }
+
+    @RequestMapping("/login")
+    public Result login(){
+        return ResultGenerator.genSuccessResult();
+    }
+
+
 }
