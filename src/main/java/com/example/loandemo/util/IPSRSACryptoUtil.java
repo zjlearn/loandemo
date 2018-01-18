@@ -26,7 +26,7 @@ public class IPSRSACryptoUtil {
      * @param
      * @return
      */
-    public static JSONObject reqDepData(String merchantID, String operationType, String req) {
+    public static JSONObject genReqData(String merchantID, String operationType, String req) {
         String reqDate = null;
         String sign = null;
         try {
@@ -43,6 +43,8 @@ public class IPSRSACryptoUtil {
         JSONObject json = new JSONObject();
         json.put(IPSCONSTANTS.SIGN_PARAM_SIGN, sign);
         json.put(IPSCONSTANTS.SIGN_PARAM_REQUEST, reqDate);
+        json.put(IPSCONSTANTS.SIGN_PARAM_operationType, operationType);
+        json.put(IPSCONSTANTS.SIGN_PARAM_merchantID, merchantID);
         return json;
     }
 
@@ -53,12 +55,12 @@ public class IPSRSACryptoUtil {
      * @return
      * @throws
      */
-    public static JSONObject analysisDepRespData(String merchantID, String resultCode, String resultMsg, String sign, String response) throws Exception {
+    public static JSONObject verifyRespData(String merchantID, String resultCode, String resultMsg, String sign, String response) throws Exception {
         boolean flag = true;
         String reqDate = null;
         String msg = "验签失败！";
         try {
-            //银行公钥验签
+
             flag = RSA.verifySHA256(CertUtil.getEncryptCertPublicKey(),
                     respSignStr(merchantID, resultCode, resultMsg, response).getBytes(CONSTANTS.UTF_8_ENCODING),
                     Hex.decodeHex(sign.toCharArray()));

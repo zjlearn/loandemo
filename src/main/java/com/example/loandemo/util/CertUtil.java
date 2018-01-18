@@ -1,6 +1,8 @@
 package com.example.loandemo.util;
+import org.apache.commons.io.FileUtils;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.security.KeyStore;
 import java.security.PrivateKey;
 import java.security.PublicKey;
@@ -13,8 +15,8 @@ import java.util.Enumeration;
  */
 public class CertUtil {
 
-    public static  String publickeyFile = "";
-    public static  String privatekeyFile ="";
+    public static  String publickeyFile = "D:\\home\\project_manman\\rsa\\bank_publicKey.cer";
+    public static  String privatekeyFile ="D:\\home\\project_manman\\rsa\\mer_privateKey.pfx";
     /**
      * 获取银行公钥
      */
@@ -64,12 +66,14 @@ public class CertUtil {
      * @throws Exception
      */
     public static PublicKey getEncryptCertPublicKey() throws Exception {
-        String t= "";
-        return getBankCa(t.getBytes());
+        File file = new File(publickeyFile);
+        byte [] data = FileUtils.readFileToByteArray(file);
+        return getBankCa(data);
     }
 
     public static PrivateKey getSignCertPrivateKey() throws Exception {
-        String t= "";
-        return getMerCa(t.getBytes());
+        File file = new File(privatekeyFile);
+        byte [] data = FileUtils.readFileToByteArray(file);
+        return getMerCa(data);
     }
 }
