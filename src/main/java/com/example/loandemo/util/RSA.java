@@ -20,8 +20,7 @@ public class RSA {
     /**
      * 加密算法，
      * 参考： http://zhuyuehua.iteye.com/blog/1112722
-     *
-     *
+
      * @param publicKey
      * @param message
      * @return

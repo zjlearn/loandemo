@@ -1,5 +1,7 @@
 package com.example.demo.dao;
 
+import com.example.loandemo.model.Role;
+
 public interface RoleMapper {
     int deleteByPrimaryKey(Long id);
 
